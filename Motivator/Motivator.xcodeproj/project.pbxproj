@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0354D6B72531002100C84A31 /* arrow-down.json in Resources */ = {isa = PBXBuildFile; fileRef = 0354D6B62531002100C84A31 /* arrow-down.json */; };
+		0354D6BA253107BD00C84A31 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6B9253107BD00C84A31 /* MessageTableViewCell.swift */; };
+		0354D6BD25310A1100C84A31 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6BC25310A1100C84A31 /* DataService.swift */; };
+		0354D6C125310DF900C84A31 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6C025310DF900C84A31 /* DateFormatter.swift */; };
 		036D17862530AC3100644984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17852530AC3100644984 /* AppDelegate.swift */; };
 		036D17882530AC3100644984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17872530AC3100644984 /* SceneDelegate.swift */; };
 		036D178A2530AC3100644984 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17892530AC3100644984 /* MainTabbarController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		0354D6B62531002100C84A31 /* arrow-down.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "arrow-down.json"; sourceTree = "<group>"; };
+		0354D6B9253107BD00C84A31 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		0354D6BC25310A1100C84A31 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0354D6C025310DF900C84A31 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		036D17822530AC3100644984 /* Motivator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036D17852530AC3100644984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		036D17872530AC3100644984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				036D17B62530D51000644984 /* ScheduleViewController.swift */,
+				0354D6B9253107BD00C84A31 /* MessageTableViewCell.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -156,6 +163,8 @@
 			children = (
 				036D17A32530CE0300644984 /* Colors.swift */,
 				036D17C02530D59D00644984 /* ViewController+Initializer.swift */,
+				0354D6BC25310A1100C84A31 /* DataService.swift */,
+				0354D6C025310DF900C84A31 /* DateFormatter.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -282,13 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				036D17C12530D59D00644984 /* ViewController+Initializer.swift in Sources */,
+				0354D6BD25310A1100C84A31 /* DataService.swift in Sources */,
 				036D178A2530AC3100644984 /* MainTabbarController.swift in Sources */,
 				036D17BA2530D51900644984 /* AuthorsViewController.swift in Sources */,
 				036D17A42530CE0300644984 /* Colors.swift in Sources */,
 				036D17E02530E97A00644984 /* MainContainerViewController.swift in Sources */,
+				0354D6BA253107BD00C84A31 /* MessageTableViewCell.swift in Sources */,
 				036D17862530AC3100644984 /* AppDelegate.swift in Sources */,
 				036D17D72530DB3D00644984 /* EditViewController.swift in Sources */,
 				036D17B72530D51000644984 /* ScheduleViewController.swift in Sources */,
+				0354D6C125310DF900C84A31 /* DateFormatter.swift in Sources */,
 				036D17B32530D4CA00644984 /* SplashScreenViewController.swift in Sources */,
 				036D17882530AC3100644984 /* SceneDelegate.swift in Sources */,
 				036D17BE2530D53900644984 /* DetailViewController.swift in Sources */,

@@ -124,14 +124,25 @@
                     <view key="view" contentMode="scaleToFill" id="vtg-qn-c07">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LEA-oo-Chu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="v50-it-rVi"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LEA-oo-Chu" secondAttribute="bottom" id="BZz-q5-dwA"/>
+                            <constraint firstItem="LEA-oo-Chu" firstAttribute="top" secondItem="vtg-qn-c07" secondAttribute="top" id="QFL-Xe-NIk"/>
+                            <constraint firstItem="LEA-oo-Chu" firstAttribute="trailing" secondItem="v50-it-rVi" secondAttribute="trailing" id="amh-O6-I04"/>
+                            <constraint firstItem="LEA-oo-Chu" firstAttribute="leading" secondItem="v50-it-rVi" secondAttribute="leading" id="oO5-gA-T89"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="CNW-7b-OwP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9k1-Xr-R7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1522" y="992"/>
+            <point key="canvasLocation" x="-1523.1884057971015" y="991.74107142857133"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="clW-Fd-FMJ">
@@ -140,14 +151,78 @@
                     <view key="view" contentMode="scaleToFill" id="gUi-eV-Noz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RHN-Q8-Psi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AB4-9b-8D2" customClass="MessageTableViewCell" customModule="Motivator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="197"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AB4-9b-8D2" id="SX4-K4-K8O">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ke-7I-HNB">
+                                                    <rect key="frame" x="297" y="121.5" width="87" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:10AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWE-h9-yL8">
+                                                    <rect key="frame" x="177.5" y="167" width="59" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-DN-x47">
+                                                    <rect key="frame" x="10" y="20" width="394" height="81.5"/>
+                                                    <string key="text">"Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary."</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u19-DN-x47" firstAttribute="leading" secondItem="SX4-K4-K8O" secondAttribute="leading" constant="10" id="LdR-Sj-X2m"/>
+                                                <constraint firstItem="IWE-h9-yL8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Ke-7I-HNB" secondAttribute="bottom" constant="25" id="OZc-vE-aDX"/>
+                                                <constraint firstItem="u19-DN-x47" firstAttribute="top" secondItem="SX4-K4-K8O" secondAttribute="top" constant="20" id="STI-Ug-TQR"/>
+                                                <constraint firstAttribute="bottom" secondItem="IWE-h9-yL8" secondAttribute="bottom" constant="10" id="WFf-Qx-NwP"/>
+                                                <constraint firstItem="7Ke-7I-HNB" firstAttribute="top" secondItem="u19-DN-x47" secondAttribute="bottom" constant="20" id="coi-LW-0lg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7Ke-7I-HNB" secondAttribute="trailing" constant="10" id="dL8-DO-xUQ"/>
+                                                <constraint firstItem="IWE-h9-yL8" firstAttribute="centerX" secondItem="SX4-K4-K8O" secondAttribute="centerX" id="kPz-4T-EgJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="u19-DN-x47" secondAttribute="trailing" constant="10" id="lDk-xJ-Rke"/>
+                                                <constraint firstItem="7Ke-7I-HNB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SX4-K4-K8O" secondAttribute="leadingMargin" id="q12-xC-E0B"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="7Ke-7I-HNB" id="y2l-xd-Eq1"/>
+                                            <outlet property="quoteLabel" destination="u19-DN-x47" id="bPV-Dc-bei"/>
+                                            <outlet property="timeLabel" destination="IWE-h9-yL8" id="2ti-gJ-Ggw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hyf-wQ-EAx"/>
                         <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RHN-Q8-Psi" secondAttribute="bottom" id="ULn-45-ZL8"/>
+                            <constraint firstItem="RHN-Q8-Psi" firstAttribute="trailing" secondItem="hyf-wQ-EAx" secondAttribute="trailing" id="ko6-Y1-JRN"/>
+                            <constraint firstItem="RHN-Q8-Psi" firstAttribute="top" secondItem="gUi-eV-Noz" secondAttribute="top" id="rAH-TT-UJF"/>
+                            <constraint firstItem="RHN-Q8-Psi" firstAttribute="leading" secondItem="gUi-eV-Noz" secondAttribute="leading" id="t1B-sX-JFm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="NaY-ot-Oib"/>
+                    <connections>
+                        <outlet property="tableView" destination="RHN-Q8-Psi" id="v9G-4n-Bbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doe-p0-Yzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3158" y="992"/>
+            <point key="canvasLocation" x="-3159.4202898550725" y="991.74107142857133"/>
         </scene>
         <!--Main Container View Controller-->
         <scene sceneID="4Vh-6X-0V0">
@@ -316,9 +391,6 @@
         <image name="tap-icon" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
