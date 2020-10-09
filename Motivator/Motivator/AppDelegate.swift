@@ -6,31 +6,13 @@
 //
 
 import UIKit
-import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        
-        
-//        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-//        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (granted, error) in
-//            if !granted {
-//                print("Something Error: \(error?.localizedDescription ?? "No Reason!")")
-//            } else {
-//                UNUserNotificationCenter.current().delegate = self
-//                let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-//                UNUserNotificationCenter.current().requestAuthorization(
-//                    options: authOptions,
-//                    completionHandler: {_, _ in })
-//            }
-//        }
-//        
-//        application.registerForRemoteNotifications()
-        
+        LocalNotificationManager.shared.requestAuthorization()
         return true
     }
     

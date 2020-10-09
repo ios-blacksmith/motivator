@@ -11,6 +11,7 @@
 		0354D6BA253107BD00C84A31 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6B9253107BD00C84A31 /* MessageTableViewCell.swift */; };
 		0354D6BD25310A1100C84A31 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6BC25310A1100C84A31 /* DataService.swift */; };
 		0354D6C125310DF900C84A31 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6C025310DF900C84A31 /* DateFormatter.swift */; };
+		0354D6C42531159600C84A31 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D6C32531159600C84A31 /* LocalNotificationManager.swift */; };
 		036D17862530AC3100644984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17852530AC3100644984 /* AppDelegate.swift */; };
 		036D17882530AC3100644984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17872530AC3100644984 /* SceneDelegate.swift */; };
 		036D178A2530AC3100644984 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17892530AC3100644984 /* MainTabbarController.swift */; };
@@ -35,6 +36,7 @@
 		0354D6B9253107BD00C84A31 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		0354D6BC25310A1100C84A31 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0354D6C025310DF900C84A31 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		0354D6C32531159600C84A31 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		036D17822530AC3100644984 /* Motivator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036D17852530AC3100644984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		036D17872530AC3100644984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				036D17C02530D59D00644984 /* ViewController+Initializer.swift */,
 				0354D6BC25310A1100C84A31 /* DataService.swift */,
 				0354D6C025310DF900C84A31 /* DateFormatter.swift */,
+				0354D6C32531159600C84A31 /* LocalNotificationManager.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				036D17B72530D51000644984 /* ScheduleViewController.swift in Sources */,
 				0354D6C125310DF900C84A31 /* DateFormatter.swift in Sources */,
 				036D17B32530D4CA00644984 /* SplashScreenViewController.swift in Sources */,
+				0354D6C42531159600C84A31 /* LocalNotificationManager.swift in Sources */,
 				036D17882530AC3100644984 /* SceneDelegate.swift in Sources */,
 				036D17BE2530D53900644984 /* DetailViewController.swift in Sources */,
 			);

@@ -7,10 +7,12 @@
 
 import UIKit
 
-struct Message {
+struct Message: Codable {
+    let id: String
+    let isRepeating: Bool
     let quote: String
     let author: String
-    let deadline: Date
+    var deadline: Date
 }
 
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {

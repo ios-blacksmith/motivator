@@ -66,5 +66,12 @@ class EditViewController: UIViewController {
     
     @IBAction private func scheduleButtonPressed(_ sender: Any) {
         // TODO: open details view controller
+        
+        let message = Message(id: UUID().uuidString,
+                              isRepeating: false,
+                              quote: "MESSAGE",
+                              author: "AUTHOR",
+                              deadline: Date().advanced(by: 3))
+        LocalNotificationManager.shared.scheduleNotification(with: message)
     }
 }

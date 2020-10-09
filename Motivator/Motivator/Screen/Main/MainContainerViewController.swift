@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainContainerViewController: UIViewController {
+class MainContainerViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     // MARK: - IBOutlets
     
@@ -36,6 +36,8 @@ class MainContainerViewController: UIViewController {
         }
         mainTabbarController = vc
         mainTabbarController?.selectedIndex = MainTabbarController.Tab.edit.index
+        
+        LocalNotificationManager.shared.userNotificationCenterDelegate = self
 
     }
     
@@ -52,4 +54,19 @@ class MainContainerViewController: UIViewController {
     @IBAction private func authorsTabPressed(_ sender: Any) {
         tab = .authors
     }
+    
+    // MARK: - UNUserNotificationCenterDelegate
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        
+    }
+
 }
