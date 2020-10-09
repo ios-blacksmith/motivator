@@ -62,10 +62,56 @@
                     <view key="view" contentMode="scaleToFill" id="1Z9-bk-2YL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your motivation message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-PB-bbI">
+                                <rect key="frame" x="20" y="124" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-rT-3WE" userLabel="Arrow Animation Container View">
+                                <rect key="frame" x="87" y="169.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="JRx-7j-weo"/>
+                                    <constraint firstAttribute="width" constant="240" id="vH5-KL-SU6"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVZ-vn-oe2">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <connections>
+                                    <action selector="scheduleButtonPressed:" destination="lyu-Ut-oRe" eventType="touchUpInside" id="bYB-g9-LjN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap-icon" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-vm-8eN">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Ujv-UU-AEM"/>
+                                    <constraint firstAttribute="width" constant="240" id="WSf-xM-orW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XtF-IP-4s1"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dVZ-vn-oe2" firstAttribute="centerX" secondItem="b2e-vm-8eN" secondAttribute="centerX" id="3Yn-3I-94a"/>
+                            <constraint firstItem="dVZ-vn-oe2" firstAttribute="height" secondItem="b2e-vm-8eN" secondAttribute="height" id="AOb-zw-ha4"/>
+                            <constraint firstItem="b2e-vm-8eN" firstAttribute="centerY" secondItem="1Z9-bk-2YL" secondAttribute="centerY" id="HtS-0p-jcN"/>
+                            <constraint firstItem="XtF-IP-4s1" firstAttribute="trailing" secondItem="lMK-PB-bbI" secondAttribute="trailing" constant="20" id="TX2-2C-En3"/>
+                            <constraint firstItem="gXN-rT-3WE" firstAttribute="centerX" secondItem="1Z9-bk-2YL" secondAttribute="centerX" id="UCV-it-c6z"/>
+                            <constraint firstItem="dVZ-vn-oe2" firstAttribute="width" secondItem="b2e-vm-8eN" secondAttribute="width" id="Zae-WY-vIA"/>
+                            <constraint firstItem="lMK-PB-bbI" firstAttribute="top" secondItem="XtF-IP-4s1" secondAttribute="top" constant="80" id="Zce-vK-2Ie"/>
+                            <constraint firstItem="dVZ-vn-oe2" firstAttribute="centerY" secondItem="b2e-vm-8eN" secondAttribute="centerY" id="dv7-Rz-56O"/>
+                            <constraint firstItem="b2e-vm-8eN" firstAttribute="centerX" secondItem="1Z9-bk-2YL" secondAttribute="centerX" id="g9S-X7-qNf"/>
+                            <constraint firstItem="gXN-rT-3WE" firstAttribute="top" secondItem="lMK-PB-bbI" secondAttribute="bottom" constant="20" id="j9v-EC-6aE"/>
+                            <constraint firstItem="lMK-PB-bbI" firstAttribute="leading" secondItem="XtF-IP-4s1" secondAttribute="leading" constant="20" id="tV6-5Q-TFc"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="schedule" id="cmC-Ph-ese"/>
+                    <tabBarItem key="tabBarItem" title="" id="cmC-Ph-ese"/>
+                    <connections>
+                        <outlet property="arrowAnimationContainerView" destination="gXN-rT-3WE" id="6pP-SW-bUB"/>
+                        <outlet property="mainButtonImageView" destination="b2e-vm-8eN" id="HVj-Lo-l11"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dA-ng-aBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="v50-it-rVi"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="authors" id="CNW-7b-OwP"/>
+                    <tabBarItem key="tabBarItem" title="" id="CNW-7b-OwP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9k1-Xr-R7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="hyf-wQ-EAx"/>
                         <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home" id="NaY-ot-Oib"/>
+                    <tabBarItem key="tabBarItem" title="" id="NaY-ot-Oib"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doe-p0-Yzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,7 +179,7 @@
                                                             <action selector="scheduleTabPressed:" destination="Upf-XW-400" eventType="touchUpInside" id="3CK-ZK-3ZI"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wlf-tg-T9y">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule-normal" translatesAutoresizingMaskIntoConstraints="NO" id="Wlf-tg-T9y">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="peQ-46-Q0F"/>
@@ -162,7 +208,7 @@
                                                             <action selector="editTabPressed:" destination="Upf-XW-400" eventType="touchUpInside" id="xtr-XB-yKD"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-7H-lkQ">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-7H-lkQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="gQ7-7H-lkQ" secondAttribute="height" multiplier="1:1" id="BvI-YQ-T0S"/>
@@ -191,7 +237,7 @@
                                                             <action selector="authorsTabPressed:" destination="Upf-XW-400" eventType="touchUpInside" id="WqB-m7-kjI"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="s0R-zH-6xI">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authors-normal" translatesAutoresizingMaskIntoConstraints="NO" id="s0R-zH-6xI">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="e85-ZO-3Pg"/>
@@ -264,15 +310,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="authors" width="128" height="128.5"/>
-        <image name="home" width="25" height="25"/>
-        <image name="logo" width="128" height="128"/>
-        <image name="schedule" width="128" height="128.5"/>
+        <image name="authors-normal" width="128" height="128.5"/>
+        <image name="edit-highlighted" width="128" height="128.5"/>
+        <image name="schedule-normal" width="128" height="128.5"/>
+        <image name="tap-icon" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

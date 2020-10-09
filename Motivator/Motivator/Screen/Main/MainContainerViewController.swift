@@ -35,6 +35,8 @@ class MainContainerViewController: UIViewController {
             return
         }
         mainTabbarController = vc
+        mainTabbarController?.selectedIndex = MainTabbarController.Tab.edit.index
+
     }
     
     // MARK: - Actions
