@@ -21,7 +21,8 @@
 		036D17BE2530D53900644984 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17BD2530D53900644984 /* DetailViewController.swift */; };
 		036D17C12530D59D00644984 /* ViewController+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17C02530D59D00644984 /* ViewController+Initializer.swift */; };
 		036D17CF2530D62500644984 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036D17CE2530D62500644984 /* Detail.storyboard */; };
-		036D17D72530DB3D00644984 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17D62530DB3D00644984 /* HomeViewController.swift */; };
+		036D17D72530DB3D00644984 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17D62530DB3D00644984 /* EditViewController.swift */; };
+		036D17E02530E97A00644984 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D17DF2530E97A00644984 /* MainContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,8 @@
 		036D17BD2530D53900644984 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		036D17C02530D59D00644984 /* ViewController+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Initializer.swift"; sourceTree = "<group>"; };
 		036D17CE2530D62500644984 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
-		036D17D62530DB3D00644984 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		036D17D62530DB3D00644984 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		036D17DF2530E97A00644984 /* MainContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +90,12 @@
 			path = Motivator;
 			sourceTree = "<group>";
 		};
-		036D179B2530CCEE00644984 /* Home */ = {
+		036D179B2530CCEE00644984 /* Edit */ = {
 			isa = PBXGroup;
 			children = (
-				036D17D62530DB3D00644984 /* HomeViewController.swift */,
+				036D17D62530DB3D00644984 /* EditViewController.swift */,
 			);
-			path = Home;
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		036D179C2530CCFA00644984 /* Schedule */ = {
@@ -148,10 +150,10 @@
 		036D17A92530D0B500644984 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				036D17D42530DA9500644984 /* Main */,
-				036D17BC2530D52F00644984 /* Detail */,
 				036D179F2530CD5100644984 /* Launch screen */,
 				036D17A02530CD5A00644984 /* Splash */,
+				036D17D42530DA9500644984 /* Main */,
+				036D17BC2530D52F00644984 /* Detail */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 		036D17D42530DA9500644984 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				036D17DF2530E97A00644984 /* MainContainerViewController.swift */,
 				036D17892530AC3100644984 /* MainTabbarController.swift */,
 				036D178B2530AC3100644984 /* Main.storyboard */,
 				036D17D52530DA9C00644984 /* Tabs */,
@@ -178,8 +181,8 @@
 		036D17D52530DA9C00644984 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				036D179B2530CCEE00644984 /* Home */,
 				036D179C2530CCFA00644984 /* Schedule */,
+				036D179B2530CCEE00644984 /* Edit */,
 				036D179D2530CD0700644984 /* Authors */,
 			);
 			path = Tabs;
@@ -262,8 +265,9 @@
 				036D178A2530AC3100644984 /* MainTabbarController.swift in Sources */,
 				036D17BA2530D51900644984 /* AuthorsViewController.swift in Sources */,
 				036D17A42530CE0300644984 /* Colors.swift in Sources */,
+				036D17E02530E97A00644984 /* MainContainerViewController.swift in Sources */,
 				036D17862530AC3100644984 /* AppDelegate.swift in Sources */,
-				036D17D72530DB3D00644984 /* HomeViewController.swift in Sources */,
+				036D17D72530DB3D00644984 /* EditViewController.swift in Sources */,
 				036D17B72530D51000644984 /* ScheduleViewController.swift in Sources */,
 				036D17B32530D4CA00644984 /* SplashScreenViewController.swift in Sources */,
 				036D17882530AC3100644984 /* SceneDelegate.swift in Sources */,
@@ -438,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Motivator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Motivator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -8,6 +8,36 @@
 import UIKit
 
 class MainTabbarController: UITabBarController {
+    
+    enum Tab {
+        case schedule
+        case edit
+        case authors
+        
+        var index: Int {
+            switch self {
+            case .schedule: return 0
+            case .edit: return 1
+            case .authors: return 2
+            }
+        }
+        
+        var highlightedImage: UIImage {
+            switch self {
+            case .schedule: return #imageLiteral(resourceName: "schedule-highlighted")
+            case .edit: return #imageLiteral(resourceName: "edit-highlighted")
+            case .authors: return #imageLiteral(resourceName: "authors-highlighted")
+            }
+        }
+        
+        var normalImage: UIImage {
+            switch self {
+            case .schedule: return #imageLiteral(resourceName: "schedule-normal")
+            case .edit: return #imageLiteral(resourceName: "edit-normal")
+            case .authors: return #imageLiteral(resourceName: "authors-normal")
+            }
+        }
+    }
 
     // MARK: - View
 

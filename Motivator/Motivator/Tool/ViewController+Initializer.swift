@@ -9,7 +9,7 @@ import UIKit
 
 extension UIStoryboard {
     
-    static let home = UIStoryboard(name: "Main", bundle: nil)
+    static let main = UIStoryboard(name: "Main", bundle: nil)
     static let detail = UIStoryboard(name: "Detail", bundle: nil)
     
     func createViewController<T: UIViewController>() -> T {
